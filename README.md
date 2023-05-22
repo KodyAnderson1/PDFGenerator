@@ -1,54 +1,75 @@
-# YAML to Word Doc Converter
+# Lab Report Generation Script Usage Guide
 
-This is a simple script to convert a YAML file to a Word document. It is written in Python 3.6 and uses
-the [python-docx](https://python-docx.readthedocs.io/en/latest/) library.
+This is a Python script that generates a lab report in .docx format with an option to convert it to .pdf. The script
+uses a YAML file for input data and can embed images from a given directory into the report.
 
-The document contains a title, a heading with the student's name, course, and date, and a list of sections as headings.
-Each section starts on a new page. The document is saved with a file name that includes the lowercase last name of the
-student and the lab number. For example, `doe_lab01.docx`.
+## Getting Started
 
-## Installation
+1. Install the required Python packages: `pip install -r requirements.txt`
+2. Save your script and the YAML file in the same directory.
+3. Prepare your images:
+    - Store the images that you want to include in your report in a **single** directory.
+    - Ensure all the images are in **PNG** format.
+    - The images will be added to the report in alphanumeric order, so name them appropriately.
 
-1. Install Python 3.x from [python.org](https://www.python.org/downloads/).
-2. Install the required libraries by running `pip install -r requirements.txt` in the project directory.
-3. **Optional:** Create a virtual environment by running `python -m venv venv` in the project directory before
-   installing the libraries.
+4. Update the YAML file:
 
-## Usage
+- Provide the lab number and name.
+- Input your name and course.
+- List out the sections of the lab.
+- Specify the directories for the input images and output .docx and .pdf files.
 
-1. Create a YAML file with the following structure:
+## Running the Script
+
+1. Navigate to the directory where your script and YAML file are stored.
+2. Run the script with Python: `python main.py`
+3. Once the Word (.docx) document is generated, the script will prompt you to convert the document to PDF. Press 'Enter'
+   to continue or 'CTRL+C' to exit.
+
+**Note:** If you want to add a table of contents, you need to add it manually to the Word document. Make sure to close
+the Word document before you press 'Enter' to convert it to a PDF.
+
+## YAML File Format
+
+Your YAML file should follow this format:
 
 ```yaml
 title:
-  labNumber: Lab 02
-  labName: Chapter 02 Lab
+labNumber: <Your Lab Number> # MUST BE A STRING, THEN A SPACE, THEN A NUMBER. I.E. Lab 02
+labName: <Your Lab Name>
+
 heading:
-  Name: Kody Anderson
-  Course: CTS 4348 Linux System Administration
+  Name: <Your Name> # MUST BE A STRING, THEN A SPACE, THEN A STRING. I.E. John Doe
+  Course: <Your Course>
 sections:
-  - On workstation, run the lab start cli-review script
-  - Display the current time in 24-hour clock time
-  - What kind of file is /home/student/zcat? Is it readable by humans?
-  - Use the wc command and Bash shortcuts to display the size of zcat
-  - Display the first 10 lines of zcat.
-  - Display the last 10 lines of the zcat file
-  - Repeat the previous command exactly with three or fewer keystrokes
-  - Repeat the previous command, but use the -n 20 option...
-  - Use the shell history to run the date +%r command again.
-  - On workstation, run the lab grade cli-review...
-  - Execute the ls -l command to show the file created in the previous step.
-  - On workstation, run the lab finish cli-review script to complete the lab
-
-docxDirectory: './'
-imgDirectory: 'C:\Users\Owner\Pictures\Screenshots\LinuxAdmin\Lab02\'
-
+  - <List of>
+  - <Section Titles>
+  - <In the Order>
+  - <You want them>
+  - <To Appear>
+docxDirectory: <Directory where the .docx file will be saved>
+pdfDirectory: <Directory where the .pdf file will be saved>
+imgDirectory: <Directory where your .png images are stored>
 ```
 
-2. Save the YAML file in the project directory as `input.yaml`.
-3. Run `python main.py` in the project directory.
-4. The Word document will be saved in the project directory as `[lastname]_[lab_##].docx`.
+```text
+Docs will be formatted as: 
 
+< labNumber: labName >
+-----------------------------
+< Your Name >
+< Your Course >
+< Today's Date >
+```
 
+## Additional Notes
 
-
+- This script works best on Windows and macOS systems. On Linux and other operating systems, the script may not
+  terminate Word processes correctly.
+- The script only supports .png images. If you have images in another format, convert them to .png before running the
+  script.
+- By default, the images will be resized to 6.5 inches wide in the Word document to fit within the default margins (1
+  inch on each side). If you want to change this, adjust the IMG_WIDTH_INCHES constant at the top of the script.
+- The script sorts and adds images based on their alphanumeric order. Name your images accordingly, e.g., '
+  01_first_image.png', '02_second_image.png', etc.
 
