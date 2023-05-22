@@ -1,3 +1,4 @@
 python-docx
 pyYAML
 docx2pdf
+PyPDF2

@@ -21,3 +21,7 @@ sections:
 docxDirectory: '.\linuxAdmin\docx'
 pdfDirectory: '.\linuxAdmin\pdf'
 imgDirectory: 'C:\Users\Owner\Pictures\Screenshots\LinuxAdmin\Lab02\'
+
+pdf_file_path: '.\linuxAdmin\instructions\lab02.pdf'
+specified_string: 'Assignment Steps:'
+output_file_path: '.\linuxAdmin\instructions\steps.txt'
