@@ -1,0 +1,5 @@
+linuxAdmin
+*.docx
+*.pdf
+venv
+.idea

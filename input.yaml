@@ -1,0 +1,23 @@
+title:
+  labNumber: Lab 02
+  labName: Chapter 02 Lab
+heading:
+  Name: Kody Anderson
+  Course: CTS 4348 Linux System Administration
+sections:
+  - On workstation, run the lab start cli-review script
+  - Display the current time in 24-hour clock time
+  - What kind of file is /home/student/zcat? Is it readable by humans?
+  - Use the wc command and Bash shortcuts to display the size of zcat
+  - Display the first 10 lines of zcat.
+  - Display the last 10 lines of the zcat file
+  - Repeat the previous command exactly with three or fewer keystrokes
+  - Repeat the previous command, but use the -n 20 option...
+  - Use the shell history to run the date +%r command again.
+  - On workstation, run the lab grade cli-review...
+  - Execute the ls -l command to show the file created in the previous step.
+  - On workstation, run the lab finish cli-review script to complete the lab
+
+docxDirectory: '.\linuxAdmin\docx'
+pdfDirectory: '.\linuxAdmin\pdf'
+imgDirectory: 'C:\Users\Owner\Pictures\Screenshots\LinuxAdmin\Lab02\'
