@@ -56,9 +56,7 @@ def save_word_document(document, output_file_path):
 
 
 def get_file_name(data, output_directory):
-    name = data['heading']['Name'].split(' ')[1].lower() \
-        if len(data['heading']['Name'].split(' ')) > 1 \
-        else data['heading']['Name'].split(' ')[0].lower()
+    name = data['heading']['StudentID']
 
     lab_number = data['title']['labNumber'].replace(" ", "").lower()
     return os.path.join(output_directory, f"{name}_{lab_number}")

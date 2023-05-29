@@ -1,27 +1,39 @@
 title:
   labNumber: Lab 02
-  labName: Chapter 02 Lab
+  labName: RH124 Chapter 03 Lab
 heading:
   Name: Kody Anderson
+  StudentID: ka80
   Course: CTS 4348 Linux System Administration
 sections:
-  - On workstation, run the lab start cli-review script
-  - Display the current time in 24-hour clock time
-  - What kind of file is /home/student/zcat? Is it readable by humans?
-  - Use the wc command and Bash shortcuts to display the size of zcat
-  - Display the first 10 lines of zcat.
-  - Display the last 10 lines of the zcat file
-  - Repeat the previous command exactly with three or fewer keystrokes
-  - Repeat the previous command, but use the -n 20 option...
-  - Use the shell history to run the date +%r command again.
-  - On workstation, run the lab grade cli-review...
-  - Execute the ls -l command to show the file created in the previous step.
-  - On workstation, run the lab finish cli-review script to complete the lab
+  - 1a. Execute lab start files-review.
+  - 1b. Use the ssh command to log in to serverb as the student user
+  - 2. Use the mkdir command with brace expansion...
+  - 3. Create a total of 12 files
+  - 4. Create a total of eight files
+  - 5. Create two subdirectories ... under the Videos directory
+  - 6. Move the appropriate TV episodes into the season subdirectories
+  - 7. Create a 2-level directory hierarchy
+  - 8. Create three more subdirectories directly under the my_bestseller directory
+  - 9. Move all book chapters to the chapters directory
+  - 10. Move only those two chapters to the editor directory
+  - 11. Move the files from the chapters directory to the vacation directory
+  - 12. Change your working directory ... and then copy ... to the vacation directory
+  - 13. From the season2 directory, copy the episode 2 file into the vacation directory
+  - 14. Copy both files from the chapters directory to the changes directory
+  - 15. Use the date +%F (+%s) command with command substitution
+  - 16. Delete the changes directory
+  - 17. Delete the vacation directory
+  - 18. Create a hard link
+  - 19. Exit from serverb
+  - 20. Execute lab grade files-review
+  - 21. Execute lab finish files-review
+
 
 docxDirectory: '.\linuxAdmin\docx'
 pdfDirectory: '.\linuxAdmin\pdf'
-imgDirectory: 'C:\Users\Owner\Pictures\Screenshots\LinuxAdmin\Lab02\'
+imgDirectory: '.\linuxAdmin\img\ch03'
 
 pdf_file_path: '.\linuxAdmin\instructions\lab02.pdf'
-specified_string: 'Assignment Steps:'
 output_file_path: '.\linuxAdmin\instructions\steps.txt'
+specified_string: 'Assignment Steps:'

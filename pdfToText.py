@@ -1,5 +1,4 @@
 import re
-import os
 import PyPDF2
 import yaml
 
@@ -28,10 +27,10 @@ def extract_after_string(text, specified_string):
 def filter_lines_starting_with_number(lines):
     """Filter lines that start with a number and remove the starting number."""
     filtered_lines = []
-    for line in lines:
+    for i, line in enumerate(lines):
         if re.match(r'^\d', line):
             filtered_line = re.sub(r'^\d+\s*', '', line)
-            filtered_line = re.sub(r'^\.', '-', filtered_line)
+            filtered_line = re.sub(r'^\.', f'- {i}.', filtered_line)
             filtered_lines.append(filtered_line)
     return filtered_lines
 
