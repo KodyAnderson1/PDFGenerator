@@ -1,39 +1,25 @@
-title:
-  labNumber: Lab 02
-  labName: RH124 Chapter 03 Lab
+docxDirectory: '.\linuxAdmin\docx'
+pdfDirectory: '.\linuxAdmin\pdf'
+rubricDirectory: '.\linuxAdmin\rubrics'
+
+truncateLength: 60
+
+imgDirectory: '.\linuxAdmin\img\ch10'
+rubricFile: 'RH124 Ch 10 Lab.html'
 heading:
   Name: Kody Anderson
   StudentID: ka80
   Course: CTS 4348 Linux System Administration
-sections:
-  - 1a. Execute lab start files-review.
-  - 1b. Use the ssh command to log in to serverb as the student user
-  - 2. Use the mkdir command with brace expansion...
-  - 3. Create a total of 12 files
-  - 4. Create a total of eight files
-  - 5. Create two subdirectories ... under the Videos directory
-  - 6. Move the appropriate TV episodes into the season subdirectories
-  - 7. Create a 2-level directory hierarchy
-  - 8. Create three more subdirectories directly under the my_bestseller directory
-  - 9. Move all book chapters to the chapters directory
-  - 10. Move only those two chapters to the editor directory
-  - 11. Move the files from the chapters directory to the vacation directory
-  - 12. Change your working directory ... and then copy ... to the vacation directory
-  - 13. From the season2 directory, copy the episode 2 file into the vacation directory
-  - 14. Copy both files from the chapters directory to the changes directory
-  - 15. Use the date +%F (+%s) command with command substitution
-  - 16. Delete the changes directory
-  - 17. Delete the vacation directory
-  - 18. Create a hard link
-  - 19. Exit from serverb
-  - 20. Execute lab grade files-review
-  - 21. Execute lab finish files-review
-
-
-docxDirectory: '.\linuxAdmin\docx'
-pdfDirectory: '.\linuxAdmin\pdf'
-imgDirectory: '.\linuxAdmin\img\ch03'
-
-pdf_file_path: '.\linuxAdmin\instructions\lab02.pdf'
-output_file_path: '.\linuxAdmin\instructions\steps.txt'
-specified_string: 'Assignment Steps:'
+#sections:
+#  - 1. lab start ssh-review
+#  - 2. Use the ssh-keygen command
+#  - 3. Use the ssh-copy-id command
+#  - 4. Confirm that production1 can successfully log in
+#  - 5. Set PermitRootLogin to no in /etc/ssh/sshd_config
+#  - 6. From servera, try logging in to serverb as root
+#  - 7. SetPasswordAuthentication to no
+#  - 8. try logging in to serverb as production2
+#  - 9. Verify that PubkeyAuthentication is enabled
+#  - 10. Return to the second terminal
+#  - 11. lab grade ssh-review
+#  - 12. lab finish ssh-review

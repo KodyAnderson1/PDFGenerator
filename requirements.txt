@@ -2,3 +2,4 @@ python-docx
 pyYAML
 docx2pdf
 PyPDF2
+beautifulsoup4
